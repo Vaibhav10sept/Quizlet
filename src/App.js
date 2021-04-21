@@ -3,6 +3,7 @@ import "./App.css";
 import Login from "./Login";
 import fire from "./fire";
 import Landing from "./Landing";
+import Home from "./components/Home";
 
 
 function App() {
@@ -89,5 +90,4 @@ function App() {
   )
 
 }
-
 export default App;

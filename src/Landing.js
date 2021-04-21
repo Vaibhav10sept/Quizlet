@@ -12,11 +12,11 @@ function Landing({ handleLogout }) {
   return (
     <div className="hero">
         <nav>
-        <h2>welcome</h2>
+        <h2>Welcome</h2>
         <div>
         <button className="neon">
         {" "}
-        <span onClick={handleLogout}>log out</span>
+        <span onClick={handleLogout}>logout</span>
       </button>
         </div>
  
