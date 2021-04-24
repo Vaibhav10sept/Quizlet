@@ -131,11 +131,11 @@ class Level1 extends Component {
 
     render() {
         return (
-            <div style={{ padding: '1rem', border: '1px solid grey', borderRadius: '4px', maxWidth: 400, margin: '3rem auto' }}>
+            <div style={{backgroundColor:"white", padding: '1rem', border: '1px solid grey', borderRadius: '4px', maxWidth: 400, margin: '3rem auto' }}>
 
                 {this.state.round < level1.length ?
                     <>
-                        <h1>Vocaburary Game</h1>
+                        <h1>Vocabulary Game</h1>
 
                         <Progress percent={this.state.round / level1.length * 100} status="active" />
 
