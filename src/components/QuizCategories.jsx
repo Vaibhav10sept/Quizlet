@@ -15,6 +15,7 @@ import { useState, useEffect } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { styles, difficulties, createMarkup } from "../helpers";
 import QuizAnswers from "./QuizAnswers";
+import Tada from 'react-reveal/Tada';
 
 const useStyles = makeStyles((theme) => {
   return styles;
@@ -118,9 +119,13 @@ const QuizCategories = () => {
       <Paper className={classes.paper}>
         {currentQuizStep === "start" ? (
           <>
+           
             <Typography variant="h1" className={classes.mainTitle}>
+            <Tada>
               Get Questions:
+              </Tada>
             </Typography>
+        
             <form onSubmit={handleSubmit}>
               <Grid container spacing={4}>
                 <Grid item xs={12}>

@@ -11,7 +11,7 @@ import {
 import { useState, useEffect } from "react";
 import { createMarkup } from "../helpers";
 import TotalResults from "./TotalResults";
-
+import LightSpeed from 'react-reveal/LightSpeed';
 const QuizAnswers = ({
   classes,
   quizData,
@@ -90,6 +90,7 @@ const QuizAnswers = ({
         <Grid container spacing={4}>
           <Grid item xs={12}>
             {quizData.map((quiz) => (
+              <LightSpeed left>
               <Paper key={quiz.question} className={classes.paper}>
                 <Typography variant="h5" className={classes.question}>
                   <span dangerouslySetInnerHTML={createMarkup(quiz.question)} />
@@ -115,6 +116,7 @@ const QuizAnswers = ({
                   </Select>
                 </FormControl>
               </Paper>
+              </LightSpeed>
             ))}
             <Button
               className={classes.submitButton}
