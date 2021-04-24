@@ -1,5 +1,55 @@
 
+  * {
+    box-sizing: border-box;
+  }
   
+  .flex-container {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  .flex-item-left {
+    padding: 120px;
+    flex: 50%;
+    margin: 0;
+  position: relative;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  }
+  
+  .flex-item-right {
+    padding: 120px;
+    flex: 50%;
+    margin: 0;
+    position: relative;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  @media (max-width: 800px) {
+    .flex-container {
+      flex-direction: column;
+    } .flex-item-right
+    {
+      padding-left: auto; 
+      padding-right:auto ;
+    }.flex-item-left{
+      padding-left: auto;
+      padding-right:auto ;
+    }
+  }
+  @media (max-width: 600px) {
+    .flex-container {
+      flex-direction: column;
+    } .flex-item-right
+    {
+      padding: 50px;
+    }.flex-item-left{
+      padding: 50px;
+    }
+  }
   .colorful-button {
     --duration: 2s;
     --delay: 0s;
@@ -25,16 +75,16 @@
     padding: 0;
     margin: 0;
     text-align: center;
-    min-width: 140px;
+    min-width: 180px;
     font-family: "Inter";
     font-weight: 600;
-    font-size: 16px;
+    font-size: 18px;
     letter-spacing: 0.02em;
     line-height: 1.5;
     color: var(--c-color);
     background: radial-gradient(circle, var(--c-radial-inner), var(--c-radial-outer) 80%);
     box-shadow: 0 0 20px var(--c-shadow);
-    margin: 0 20px;
+    margin: 0 40px;
   }
   .colorful-button:before {
     content: "";
