@@ -14,9 +14,9 @@ function Landing({ handleLogout }) {
         <nav>
         <h2>Welcome</h2>
         <div>
-        <button className="neon">
+        <button style={{cursor:"pointer"}} onClick={handleLogout} className="neon">
         {" "}
-        <span onClick={handleLogout}>logout</span>
+        <span style={{cursor:"pointer"}} onClick={handleLogout}>logout</span>
       </button>
         </div>
  

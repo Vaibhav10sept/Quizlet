@@ -67,7 +67,7 @@ function Home() {
 <div class="flex-container">
   <div class="flex-item-left"> <Link to="/QuizCategories" ><button class="colorful-button">
     <div class="wrapper">
-        <span>Take a quiz</span>
+        <span  >Take a quiz</span>
         <div class="circle circle-12"></div>
         <div class="circle circle-11"></div>
         <div class="circle circle-10"></div>
@@ -88,7 +88,7 @@ function Home() {
 </div>
   <div class="flex-item-right">            <Link to="/level1"><button class="colorful-button">
     <div class="wrapper">
-        <span>Vocablary Game</span>
+        <span>Vocabulary Game</span>
         <div class="circle circle-12"></div>
         <div class="circle circle-11"></div>
         <div class="circle circle-10"></div>
