@@ -2,11 +2,7 @@
   * {
     box-sizing: border-box;
   }
-  html,body {
-    width: 100%;
-    height: 134vh;
- 
-  }
+
   .marginalways  {
     margin-top: 30px;
   }
@@ -421,22 +417,6 @@
     box-sizing: inherit;
   }
   
-  body {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    font-family: "Inter", Arial;
-    flex-direction: column;
-    /* background: #F6F8FF; */
-  }
+  
 
-  /* body .grid .colorful-button {
-    margin: 0 6px;
-  } */
-  /* body .dribbble {
-    position: fixed;
-    display: block;
-    right: 20px;
-    bottom: 20px;
-  } */
 
