@@ -19,7 +19,7 @@
   
   .hero nav {
     background-image: linear-gradient(to right, #0acffe 0%, #495aff 100%);
-    width: 100vw;
+  
     padding: 28px 15px;
     display: flex;
     align-items: center;

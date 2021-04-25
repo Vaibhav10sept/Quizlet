@@ -123,7 +123,7 @@ const QuizCategories = () => {
            
             <Typography variant="h1" className={classes.mainTitle}>
             <Slide>
-              Get Questions:
+              Create Quiz:
               </Slide>
             </Typography>
         
@@ -198,7 +198,7 @@ const QuizCategories = () => {
                 variant="contained"
                 color="primary"
               >
-                Submit
+                Create
               </Button>
             </form>
           </>
