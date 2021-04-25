@@ -13,7 +13,7 @@ const TotalResults = ({
     window.scrollTo(0, "20px");
   }, []);
   return currentQuizStep === "results" ? (
-    <div className={classes.results}>
+    <div className={classes.results} style={{marginTop:"80px"}}>
       <Typography variant="h1" className={classes.mainTitle}>
         Results
       </Typography>
