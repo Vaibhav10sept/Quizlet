@@ -7,10 +7,12 @@ import { BrowserRouter } from 'react-router-dom';
 import Level1 from "./views/Level1";
 import Level2 from "./views/Level2";
 import Home from "./components/Home";
+import Heading from "./components/Heading";
 
 function Landing({ handleLogout }) {
   return (
     <div className="hero">
+      <Heading/>
         <nav>
         <h2>Welcome</h2>
         <div>

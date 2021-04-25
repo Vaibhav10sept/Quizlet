@@ -34,17 +34,17 @@
   }
 
 .neon {
-    width: 120px;
+    width: 160px;
     height: 50px;
     line-height: 48px;
     background: rgb(180, 179, 179);
     display: inline-flex;
     margin-top: 5px;
     color: black;
-    font-size: 18px;
+    font-size: 20px;
     letter-spacing: 2px;
     text-decoration: none;
-    border-radius: 20px;
+    border-radius: 10px;
     -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(116, 116, 116, 0.267) );
   
   }
@@ -58,10 +58,10 @@
       background: linear-gradient(45deg,#fb0094,#00f,#0f0,#ff0,#f00);
       background-size: 400%;
       opacity: 1;
-      filter: blur(20px);
+      filter: blur(40px);
       animation: animate 20s linear infinite;
       transition: 0.5s;
-      border-radius: 20px;
+      border-radius: 10px;
   }
   .neon::before {
       content: "";
@@ -75,7 +75,7 @@
       opacity: 1;
       transition: 0.5s;
       animation: animate 20s linear infinite;
-      border-radius: 20px;
+      border-radius: 10px;
   }
   .neon:hover::before,
   .neon:hover::after {
@@ -95,7 +95,7 @@
         color: rgba(255, 255, 255, 0.931);
         transition: 0.5s;
         z-index: 1;
-        border-radius: 20px;
+        border-radius: 10px;
   }
   .neon:hover span {
      color:  rgba(255, 255, 255, 1);

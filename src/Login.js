@@ -2,6 +2,7 @@ import userEvent from "@testing-library/user-event";
 import { useEffect, useRef } from "react";
 import React from "react";
 import "./Login.css";
+import Heading from "./components/Heading";
 
 const Login = ({
   email,
@@ -17,13 +18,14 @@ const Login = ({
 }) => {
   return (
     <section id="home-login">
+      <Heading/>
       <div class="container-login login">
         <div class="box-login">
           {hasaccount ? <h1>LOGIN</h1> : <h1>REGISTER</h1>}
           <input
             type="text"
             name=""
-            placeholder="email"
+            placeholder="Email-Id"
             autoFocus
             value={email}
             onChange={(e) => setemail(e.target.value)}
@@ -33,7 +35,7 @@ const Login = ({
           <input
             type="password"
             name=""
-            placeholder="password"
+            placeholder="Type your password here"
             value={password}
             onChange={(e) => setpassword(e.target.value)}
           />
