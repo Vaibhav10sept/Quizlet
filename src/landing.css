@@ -20,11 +20,12 @@
   .hero nav {
     background-image: linear-gradient(to right, #0acffe 0%, #495aff 100%);
     width: 100%;
-    padding: 20px 25px;
+    padding: 28px 15px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-height: 50px;
+    max-height: 27px;
+    min-height: 20px;
   }
   
   .hero nav h2 {
