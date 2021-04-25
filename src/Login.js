@@ -18,7 +18,7 @@ const Login = ({
 }) => {
   return (
     <section id="home-login">
-      <Heading/>
+      {/* <Heading/> */}
       <div class="container-login login">
         <div class="box-login">
           {hasaccount ? <h1>LOGIN</h1> : <h1>REGISTER</h1>}
@@ -57,12 +57,12 @@ const Login = ({
             ) : (
               <>
                 <div className="neon">
-                  <span onClick={handleSignup} >sign up</span>
+                  <span onClick={handleSignup} style={{cursor:"pointer"}} >sign up</span>
                 </div>
 
-                <p className="buttonpara">
+                <p className="buttonpara" style={{cursor:"pointer"}}>
                   already have an account{" "}
-                  <span onClick={() => sethasaccount(!hasaccount)}>
+                  <span onClick={() => sethasaccount(!hasaccount)} style={{cursor:"pointer"}}>
                     &nbsp;Sign In
                   </span>
                 </p>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from 'react';
 import "./landing.css";
 import { CubeGrid } from 'styled-loaders-react'
 import {  Switch, Route,Link} from 'react-router-dom';
@@ -9,12 +9,23 @@ import Level2 from "./views/Level2";
 import Home from "./components/Home";
 import Heading from "./components/Heading";
 
+
 function Landing({ handleLogout }) {
+  const [show, setshow] = React.useState(false)
+  React.useEffect(() => {
+  if(window.location.pathname === '/'){
+    setshow(true)
+    console.log("working")
+  } 
+  }, [])
   return (
     <div className="hero">
-      <Heading/>
+    
         <nav>
         <h2>Welcome</h2>
+      {show ?<Heading/>:null}
+        
+
         <div>
         <button style={{cursor:"pointer"}} onClick={handleLogout} className="neon">
         {" "}

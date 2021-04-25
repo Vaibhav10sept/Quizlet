@@ -15,8 +15,8 @@ import { useState, useEffect } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { styles, difficulties, createMarkup } from "../helpers";
 import QuizAnswers from "./QuizAnswers";
-import Tada from 'react-reveal/Tada';
-
+import Slide from 'react-reveal/Slide';
+import './home.css'
 const useStyles = makeStyles((theme) => {
   return styles;
 });
@@ -30,6 +30,7 @@ const QuizCategories = () => {
 
   const [quizData, setQuizData] = useState([]);
   const classes = useStyles();
+
 
   const [currentQuizStep, setCurrentQuizStep] = useState("start");
 
@@ -115,15 +116,15 @@ const QuizCategories = () => {
   }
 
   return (
-    <Container>
+    <Container className ="margintop">
       <Paper className={classes.paper}>
         {currentQuizStep === "start" ? (
           <>
            
             <Typography variant="h1" className={classes.mainTitle}>
-            <Tada>
+            <Slide>
               Get Questions:
-              </Tada>
+              </Slide>
             </Typography>
         
             <form onSubmit={handleSubmit}>

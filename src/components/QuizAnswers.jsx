@@ -12,6 +12,7 @@ import { useState, useEffect } from "react";
 import { createMarkup } from "../helpers";
 import TotalResults from "./TotalResults";
 import LightSpeed from 'react-reveal/LightSpeed';
+import './home.css'
 const QuizAnswers = ({
   classes,
   quizData,
@@ -82,7 +83,7 @@ const QuizAnswers = ({
   }, []);
 
   return !processedAnswers || !processedAnswers.length ? (
-    <>
+    <div className="margintop marginalways ">
       <Typography variant="h1" className={classes.mainTitle}>
         Answer flowing Questions:
       </Typography>
@@ -129,7 +130,7 @@ const QuizAnswers = ({
           </Grid>
         </Grid>
       </form>
-    </>
+    </div>
   ) : (
     <TotalResults
       classes={classes}

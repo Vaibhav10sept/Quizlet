@@ -1,9 +1,33 @@
 .headline{
     text-align: center;
     width: 100%;
-    font-size: 28px;
+    font-size: 41px;
+    color: white!important;
+    margin-top: 100px;
     font-weight: 700;
+    position: absolute;
+  
+    padding-left: -20px;
     line-height: 3;
+    z-index: 99;
     text-shadow: 2px 3px grey;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+.highlight {
+    background: url(../assets/test.png);
+    background-repeat: no-repeat;
+    background-size: 31% 107%;
+    padding-top: 36px;
+    background-position: center;
+    /* padding: 8px 0; */
+    }
+
+    @media only screen and (max-width: 600px) {
+        .highlight {
+            background-size: 77% 112%;
+    }
+    .headline {
+        width: 92%;
+    }
 }

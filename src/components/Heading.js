@@ -2,7 +2,7 @@ import React from 'react'
 import './heading.css'
 function Heading() {
     return (
-        <div className="headline">
+        <div className="headline highlight">
             QUIZOMO
         </div>
     )

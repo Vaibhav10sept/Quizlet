@@ -131,7 +131,7 @@ class Level1 extends Component {
 
     render() {
         return (
-            <div style={{backgroundColor:"white", padding: '1rem', border: '1px solid grey', borderRadius: '4px', maxWidth: 400, margin: '3rem auto' }}>
+            <div style={{backgroundColor:"white", padding: '1rem', border: '1px solid grey', borderRadius: '4px', maxWidth: 400, margin: '7rem auto' }}>
 
                 {this.state.round < level1.length ?
                     <>
